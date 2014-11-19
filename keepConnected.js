@@ -11,11 +11,11 @@ function keepMeConnected(){
 		  if (request.status == 200) {
 			console.log("request sent");
 		  } else {
-			console.log('Unable to resolve address into lat/lng');
+			console.log('Unable to perform request');
 		  }
 		}
 	  };
 	  request.send(null);
 }
-
-setInterval(keepMeConnected,500000);
+console.log("Keep me connected extension loaded");
+setInterval(keepMeConnected,300000);
