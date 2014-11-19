@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Keep me connected to EDx",
+  "description": "--",
+  "version": "1.0",
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.edx.org/*"],
+      "js": ["keepConnected.js"]
+    }
+  ],
+  "permissions": [
+    "https://courses.edx.org/"
+  ]
+}
